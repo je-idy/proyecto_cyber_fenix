@@ -11,9 +11,11 @@
     </header>
 
     <nav>
-        <a href="/">Inicio</a> |
-        <a href="/about">Acerca de</a> |
-        <a href="/productos">Productos</a>
+        <ul>
+            <li><a href="{{url_for('inicio')}}">Inicio</a></li>
+            <li><a href="{{url_for('about')}}">Acerca de</a></li>
+            <li><a href="{{url_for('producto_nuevo')}}">Nuevo producto</a></li>
+        </ul>
     </nav>
 
     <hr>

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %} Página de productos {% endblock %}
+
+
+{% block content %}
+<h2>{{titulo}}</h2>
+<form method="post">
+    {{ form.hidden_tag() }}
+    <p>
+        {{form.nombre.label}}
+        {{form.nombre()}}
+    </p>
+
+     <p>
+        {{form.descripcion.label}}
+        {{form.descripcion()}}
+    </p>
+
+     <p>
+        {{form.cantidad.label}}
+        {{form.cantidad()}}
+    </p>
+
+     <p>
+        {{form.precio.label}}
+        {{form.precio()}}
+    </p>
+      <p>
+        {{form.submit()}}
+    </p>
+</form>
+
+{% endblock %}
