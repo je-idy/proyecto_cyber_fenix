@@ -1,0 +1,14 @@
+[
+    {
+        "nombre": "Laptop",
+        "descripción": "Modelo HP",
+        "cantidad": "15",
+        "precio": "5.50"
+    },
+    {
+        "nombre": "Mouse",
+        "descripción": "Mouse electrónico",
+        "cantidad": "20",
+        "precio": "10"
+    }
+]

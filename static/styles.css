@@ -1,0 +1,164 @@
+/* ===== RESET BÁSICO ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ===== HEADER =====  */
+
+header{
+    background: linear-gradient(90deg,#1e3c72,#2a5298);
+    padding:15px 0;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* ===== NAVBAR ===== */
+
+.custom-navbar{
+    background: linear-gradient(90deg,#1e3c72,#2a5298);
+    padding:10px 40px;
+}
+
+.navbar-brand{
+    color:white !important;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.navbar-nav .nav-link{
+    color:white !important;
+    font-weight:500;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+.navbar-nav .nav-link:hover{
+    color:#ffd166 !important;
+}
+
+
+.navbar-nav li{
+    background:none !important;
+}
+
+.navbar-nav a{
+    background:none !important;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+
+main{
+    width:90%;
+    margin:40px auto;
+    min-height:70vh;
+}
+
+/* ===== TÍTULOS ===== */
+
+h2{
+    margin-bottom:20px;
+    color:#2a5298;
+    font-weight:600;
+}
+
+h3{
+    margin-top:30px;
+    margin-bottom:10px;
+    color:#444;
+}
+
+/* ===== FORMULARIOS ===== */
+
+form{
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom:30px;
+}
+
+form label{
+    font-weight:500;
+    margin-top:10px;
+}
+
+form input{
+    width:100%;
+    padding:8px;
+    border-radius:4px;
+    border:1px solid #ccc;
+    margin-bottom:10px;
+}
+
+/* ===== TABLAS ===== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+    background:white;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+table th{
+    background:#2a5298;
+    color:white;
+    padding:10px;
+    text-align:center;
+}
+
+table td{
+    padding:10px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+
+table tr:hover{
+    background:#f1f4f9;
+}
+
+/* ===== BLOQUE JSON ===== */
+
+pre{
+    background:#f4f6f8;
+    color:#333;
+    padding:20px;
+    border-radius:6px;
+    border:1px solid #ddd;
+    font-family: Consolas, monospace;
+    font-size:14px;
+    line-height:1.5;
+    overflow:auto;
+}
+
+/* ===== LISTAS TXT ===== */
+
+ul{
+    margin-top:10px;
+}
+
+ul li{
+    background:white;
+    padding:8px;
+    margin-bottom:5px;
+    border-left:4px solid #2a5298;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}

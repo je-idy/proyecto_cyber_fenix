@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Cyber Fenix Tecnología</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Cyber Fenix {% endblock %}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 </head>
+
 <body>
-
     <header>
-        <h1>Cyber Fenix Tecnología</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+            <a class="navbar-brand" href="{{url_for('inicio')}}">Cyber Fenix</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                 <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('inicio')}}">Inicio</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('about')}}">Acerca del sistema</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('contacto')}}">Nosotros</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('productos_listar')}}">Productos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="{{url_for('inicio')}}">Inicio</a></li>
-            <li><a href="{{url_for('about')}}">Acerca de</a></li>
-            <li><a href="{{url_for('producto_nuevo')}}">Nuevo producto</a></li>
-        </ul>
-    </nav>
-
-    <hr>
 
     <main>
         {% block content %}
         {% endblock %}
     </main>
 
-    <hr>
-
     <footer>
-        <p>© 2026 Cyber Fenix Tecnología</p>
+        <p>&copy; 2026, Cyber Fenix. Todos los derechos reservados.</p>
     </footer>
 
 </body>
+
 </html>

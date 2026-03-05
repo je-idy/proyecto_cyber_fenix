@@ -1,0 +1,2 @@
+Laptop, Modelo HP, 15, 5.50
+Mouse, Mouse electrónico, 20, 10
